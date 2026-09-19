@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daily-restaurant-lead-scout"
+version = "1.0.0"
+description = "Autonomous Restaurant Lead Scout & Unidirectional Route Planner Skill"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "openpyxl>=3.0.0",
+]
+
+[project.scripts]
+restaurant-scout = "scripts.main:main"

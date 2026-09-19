@@ -1,0 +1,26 @@
+# Environment & Secrets
+.env
+.env.*
+credentials.json
+token.json
+config.local.json
+config.json
+
+# Cache & Temporary
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.cache/
+.tmp/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Output Deliverables (Optional local exports)
+output/*.xlsx
+output/*.csv
+output/*.json
+output/*.md
+output/test_audit/

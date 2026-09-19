@@ -1,0 +1,4 @@
+# Daily Restaurant Lead Scout Dependencies
+# Core workflow uses standard library (urllib, json, csv, math, re).
+# openpyxl is used for styled .xlsx Excel export.
+openpyxl>=3.1.0

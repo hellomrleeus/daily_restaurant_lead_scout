@@ -1,0 +1,71 @@
+{
+  "google_maps_api_key": "YOUR_GOOGLE_MAPS_API_KEY",
+  "typesafe_api_key": "YOUR_TYPESAFE_API_KEY",
+  "openrouter_api_key": "YOUR_OPENROUTER_API_KEY",
+  "language_code": "en",
+  "default_origin": {
+    "name": "Field Operations Base",
+    "address": "North York, Toronto, ON",
+    "latitude": 43.7615,
+    "longitude": -79.4111
+  },
+  "target_count": 30,
+  "corridor_settings": {
+    "default_direction": "east",
+    "corridor_width_km": 4.5,
+    "step_distance_km": 3.0,
+    "max_search_depth_km": 28.0,
+    "backtrack_penalty_weight": 50.0
+  },
+  "directions": {
+    "north": { "bearing": 0, "description": "北向 (Northward towards Richmond Hill / Aurora)" },
+    "northeast": { "bearing": 45, "description": "东北向 (Northeast towards Markham / Stouffville)" },
+    "east": { "bearing": 90, "description": "东向 (Eastward along Finch/Steeles towards Scarborough / Markham)" },
+    "southeast": { "bearing": 135, "description": "东南向 (Southeast towards East York / The Beaches)" },
+    "south": { "bearing": 180, "description": "南向 (Southward along Yonge towards Downtown Toronto)" },
+    "southwest": { "bearing": 225, "description": "西南向 (Southwest towards Etobicoke / Port Credit)" },
+    "west": { "bearing": 270, "description": "西向 (Westward towards Mississauga / Brampton)" },
+    "northwest": { "bearing": 315, "description": "西北向 (Northwest towards Vaughan / Woodbridge)" }
+  },
+  "fried_keywords": [
+    "fried chicken",
+    "chicken wings",
+    "korean fried chicken",
+    "fish and chips",
+    "tonkatsu",
+    "katsu",
+    "tempura",
+    "korean corn dog",
+    "taiwanese fried chicken",
+    "nashville hot chicken",
+    "churros",
+    "popeyes",
+    "churchs texas chicken",
+    "jollibee",
+    "mary browns",
+    "buffalo wild wings",
+    "bb.q chicken",
+    "the fry",
+    "kokodak",
+    "salt and pepper chicken",
+    "halibut and chips"
+  ],
+  "schedule": {
+    "enabled": false,
+    "cron": "0 21 * * *",
+    "description": "Optional recurring cron expression (e.g. '0 21 * * *' for nightly 9:00 PM, or '0 8 * * *' for morning 8:00 AM)",
+    "timezone": "America/Toronto"
+  },
+  "default_visit_target": "auto",
+  "default_departure_time": "09:30",
+  "paths": {
+    "contracted_file": "",
+    "visited_file": "",
+    "output_dir": "output"
+  },
+  "google_sheets": {
+    "enabled": false,
+    "webhook_url": "https://script.google.com/macros/s/YOUR_APPS_SCRIPT_DEPLOYMENT_ID/exec",
+    "sheet_name": "Daily Field Sales Route"
+  }
+}
